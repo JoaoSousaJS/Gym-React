@@ -30,14 +30,23 @@ export const Container = styled.div`
 
 export const Avatar = styled.div`
   width: 400px;
-  height: 500px;
-  background: url(https://source.unsplash.com/collection/190727/500x500)
+  min-height: 400px;
+  background: url(https://source.unsplash.com/collection/9785920/600x600)
     no-repeat center center;
   object-fit: cover;
 `;
 
 export const Details = styled.div`
   padding: 32px;
+
+  h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #7159c1;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 `;
 
 export const Item = styled.div`
@@ -49,11 +58,27 @@ export const Item = styled.div`
   }
 
   div:nth-child(1) {
-    color: #aaa;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
   }
   div:nth-child(2) {
     color: #555;
     font-weight: bold;
     font-size: 18px;
+  }
+
+  span {
+    padding: 8px 16px;
+    background-color: #f7df1e;
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
   }
 `;
